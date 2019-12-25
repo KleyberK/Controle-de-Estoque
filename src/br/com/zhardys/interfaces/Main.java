@@ -13,8 +13,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("CenaInicial.fxml"));
         //primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("imagens/iconBot.jpg")));
-        primaryStage.setTitle("SysPatrimonio");
+        primaryStage.setTitle("Controle de Estoque - Balãozinho Mágico");
         primaryStage.setScene(new Scene(root));
+
         primaryStage.show();
     }
 

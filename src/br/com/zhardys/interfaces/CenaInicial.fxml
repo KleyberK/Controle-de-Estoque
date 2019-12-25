@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane blendMode="BLUE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.zhardys.interfaces.CenaInicial">
+<AnchorPane blendMode="BLUE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.zhardys.interfaces.controladores.CenaInicial">
    <children>
       <MenuBar prefHeight="29.0" prefWidth="600.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Arquivo">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#MenuFechar" text="Fechar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="Estoques">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem mnemonicParsing="false" text="Listar Estoques" />
+                  <MenuItem mnemonicParsing="false" text="Criar Novo Estoque" />
+                  <MenuItem mnemonicParsing="false" text="Deletar Estoque" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="Relatórios">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" text="Relação de Material" />
+                  <MenuItem mnemonicParsing="false" text="Relação de Estoques" />
             </items>
           </Menu>
         </menus>
+         <effect>
+            <ColorAdjust contrast="1.0" hue="-0.74" saturation="0.24" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="N_RESIZE" />
+         </cursor>
       </MenuBar>
    </children>
 </AnchorPane>
