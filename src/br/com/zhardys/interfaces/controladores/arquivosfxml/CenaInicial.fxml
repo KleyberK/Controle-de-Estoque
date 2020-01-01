@@ -13,13 +13,13 @@
         <menus>
           <Menu mnemonicParsing="false" text="Arquivo">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#MenuFechar" text="Fechar" />
+              <MenuItem mnemonicParsing="false" text="Fechar" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Estoques">
             <items>
               <MenuItem mnemonicParsing="false" text="Listar Estoques" />
-                  <MenuItem mnemonicParsing="false" text="Criar Novo Estoque" />
+                  <MenuItem mnemonicParsing="false" onAction="#CriarEstoque" text="Criar Novo Estoque" />
                   <MenuItem mnemonicParsing="false" text="Deletar Estoque" />
             </items>
           </Menu>

@@ -1,8 +1,12 @@
 package br.com.zhardys.interfaces.controladores;
 
-import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 
 public class CenaInicial {
-    public void MenuFechar(ActionEvent actionEvent) {
+    @FXML
+    private void CriarEstoque() throws Exception{
+        CriarEstoque estoque = new CriarEstoque();
+        estoque.start();
     }
+
 }
