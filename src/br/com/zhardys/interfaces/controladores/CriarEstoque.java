@@ -31,7 +31,7 @@ public class CriarEstoque {
     }
 
     @FXML
-    protected void confirmarButton() throws IOException {
+    protected void confirmarButton() throws Exception {
         String Nome, Descricao, Local;
         Stage stage = (Stage) confirmar.getScene().getWindow();
         Nome = nomeField.getText();
@@ -39,7 +39,6 @@ public class CriarEstoque {
         Local = localField.getText();
         Estoque NovoEstoque = new Estoque();
         NovoEstoque.criarEstoque(Nome, Descricao, Local);
-        NovoEstoque.addEstoque(NovoEstoque);
         stage.close();
     }
 
