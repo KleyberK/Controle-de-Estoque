@@ -10,7 +10,7 @@ public class ControladorArquivos {
         String caminho = "ArquivosPrincipais/estoques.txt";
         File arquivoEstoque = new File(caminho);
         if(arquivoEstoque.exists()){
-            if(procuraEstoque(estoque.Nome)){
+            if(procuraEstoque(estoque.Nome, arquivoEstoque)){
                 MensagemErro erro = new MensagemErro();
                 erro.setErro("Estoque Informado Já Existe!");
                 erro.start();
@@ -28,7 +28,17 @@ public class ControladorArquivos {
         }
     }
 
-    private boolean procuraEstoque(String nome) {
+    private boolean procuraEstoque(String nome, File caminhoArquivo) throws Exception {
+        FileReader estoque = new FileReader(caminhoArquivo);
+        BufferedReader verificaEstoque = new BufferedReader(estoque);
+
+        while(verificaEstoque.ready()){
+            String compare = verificaEstoque.readLine();
+            if(compare.equals(nome)){
+                return true;
+            }
+        }
+
         return false;
     }
 

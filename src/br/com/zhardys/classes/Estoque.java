@@ -10,8 +10,8 @@ public class Estoque {
         this.Nome = nome;
         this.Descricao = descricao;
         this.Local = local;
-        ControladorArquivos Estoque = new ControladorArquivos();
-        Estoque.novoEstoque(this);
+        ControladorArquivos ArquivoEstoque = new ControladorArquivos();
+        ArquivoEstoque.novoEstoque(this);
     }
 
 }
