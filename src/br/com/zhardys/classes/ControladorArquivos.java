@@ -25,9 +25,6 @@ public class ControladorArquivos {
             FileWriter arquivo = new FileWriter(caminho, true);
             BufferedWriter escrita = new BufferedWriter(arquivo);
             criarArquivos(escrita, estoque);
-            MensagemErro erro = new MensagemErro();
-            erro.setErro("Estoque Informado Já Existe!tralalalalalalallalalalalalallalalalalalallalalalalalalallalalalalalallalalalal");
-            erro.start();
         }
     }
 
